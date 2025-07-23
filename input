@@ -1,0 +1,97 @@
+The quick brown fox jumps over the lazy dog.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Short.
+This is a much longer line of text that should wrap or be truncated depending on the pager's width settings, and it contains punctuation!
+Another line.
+A line with numbers: 1234567890
+A line with special characters: !@#$%^&*()_+-=[]{}|;':",.<>/?
+A line with tabs	and spaces.
+A poetic line: To be, or not to be, that is the question.
+A line with emojis: 😀🚀✨
+A line with mixed case: LoReM IpSuM DoLoR SiT AmEt.
+A line with a URL: https://github.com/microsoft/vcpkg
+A line with a file path: C:\Users\mhjla\Documents\file.txt
+A line with a quote: "The only limit to our realization of tomorrow is our doubts of today."
+A line with a single word: Word
+A line with a repeated word: echo echo echo echo echo
+A line with a sentence that ends abruptly
+A line with a list: apples, oranges, bananas, grapes
+A line with a date: 2025-07-22
+A line with a time: 14:35:00
+A line with a hexadecimal value: 0xDEADBEEF
+A line with a binary value: 101010
+A line with a scientific value: 6.022e23
+A line with a math equation: E = mc^2
+A line with a joke: Why did the chicken cross the road? To get to the other side!
+A line with a haiku:
+Gentle spring rain falls
+Softly on the blooming earth
+Nature awakens
+A line with a riddle: What has keys but can't open locks? A piano.
+A line with a palindrome: A man, a plan, a canal, Panama!
+A line with a tongue twister: She sells seashells by the seashore.
+A line with a programming snippet: for(int i=0; i<10; ++i) std::cout << i << '\n';
+A line with a C++ include: #include <iostream>
+A line with a CMake command: add_executable(MyApp main.cpp)
+A line with a random fact: Honey never spoils.
+A line with a color: The sky is blue.
+A line with a feeling: I am excited for this project!
+A line with a question: How are you today?
+A line with a response: I'm doing well, thank you!
+A line with a blank line above.
+
+A line after a blank line.
+A line with a tab at the start:	Indented line.
+A line with a newline character at the end.
+This line ends with a period.
+This line ends with an exclamation mark!
+This line ends with a question mark?
+A line with a comma, and another comma, and yet another comma.
+A line with a semicolon; and a colon:
+A line with brackets [like this] and {like this} and (like this).
+A line with a dash - and an underscore _.
+A line with a percent sign: 100%
+A line with a copyright symbol: © 2025
+A line with a trademark symbol: ™
+A line with a euro symbol: €
+A line with a pound symbol: £
+A line with a yen symbol: ¥
+A line with a section sign: §
+A line with a degree symbol: 90°
+A line with a micro symbol: µ
+A line with a pi symbol: π
+A line with a lambda: λ
+A line with a summation: ∑
+A line with a product: ∏
+A line with a square root: √
+A line with a copyright notice: Copyright 2025 by GitHub Copilot
+A line with a random string: xYz123!@#
+A line with a repeated character: aaaaaaaaaaaaaaaaaaaaaa
+A line with alternating case: aBcDeFgHiJkLmNoPqRsTuVwXyZ
+A line with a Morse code: ... --- ...
+A line with a chess move: e2-e4
+A line with a phone number: (555) 123-4567
+A line with a postal address: 123 Main St, Anytown, USA
+A line with a latitude/longitude: 37.7749° N, 122.4194° W
+A line with a chemical formula: H2O
+A line with a periodic table element: Gold (Au)
+A line with a weather report: Sunny, 25°C
+A line with a currency conversion: 100 USD = 90 EUR
+A line with a binary file signature: PK
+A line with a UUID: 123e4567-e89b-12d3-a456-426614174000
+A line with a MAC address: 00:1A:2B:3C:4D:5E
+A line with a hex color: #FF5733
+A line with a regex: ^[A-Za-z0-9_]+$
+A line with a SQL query: SELECT * FROM users WHERE id = 1;
+A line with a JSON object: { "name": "John", "age": 30 }
+A line with an XML tag: <note>Remember me</note>
+A line with a YAML entry: name: John
+A line with a Markdown header: # Header 1
+A line with a Markdown list: - Item 1
+A line with a Markdown link: [GitHub](https://github.com)
+A line with a Markdown image: ![Alt text](image.png)
+A line with a Markdown code block:
+```
+code block
+```
+A line with a closing statement: End of test input.
