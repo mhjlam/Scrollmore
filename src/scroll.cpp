@@ -163,13 +163,13 @@ private:
 int main(int argc, char* argv[]) {
     try {
         // Parse command line options
-        cxxopts::Options options("scroller", "A modern scroller");
+        cxxopts::Options options("scroll", "A modern scroller");
         options.add_options()("h,help", "Print usage");
         auto result = options.parse(argc, argv);
 
         // If help is requested, print usage and exit
         if (result.count("help")) {
-            std::cout << "Usage: scroller [input] (input can be a filename or text, or pipe input)\n";
+            std::cout << "Usage: scroll [input] (input can be a filename or text, or pipe input)\n";
             std::cout << options.help() << std::endl;
             return 0;
         }
@@ -217,7 +217,7 @@ int main(int argc, char* argv[]) {
 
         // If no input was provided, print usage
         if (!has_input) {
-            std::cerr << "Usage: scroller [input] (input can be a filename or text, or pipe input)\n";
+            std::cerr << "Usage: scroll [input] (input can be a filename or text, or pipe input)\n";
             return 1;
         }
 

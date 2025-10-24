@@ -5,15 +5,15 @@ project(Scrollmore LANGUAGES CXX)
 find_package(ftxui CONFIG REQUIRED)
 find_package(cxxopts CONFIG REQUIRED)
 
-add_executable(scroller src/scroller.cpp)
-set_target_properties(scroller PROPERTIES
+add_executable(scroll src/scroll.cpp)
+set_target_properties(scroll PROPERTIES
   RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_SOURCE_DIR}/bin/Debug"
   RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/bin/Release"
   RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "${CMAKE_SOURCE_DIR}/bin/RelWithDebInfo"
   RUNTIME_OUTPUT_DIRECTORY_MINSIZEREL "${CMAKE_SOURCE_DIR}/bin/MinSizeRel"
 )
-target_link_libraries(scroller PRIVATE ftxui::dom ftxui::screen ftxui::component)
-target_compile_features(scroller PRIVATE cxx_std_20)
+target_link_libraries(scroll PRIVATE ftxui::dom ftxui::screen ftxui::component)
+target_compile_features(scroll PRIVATE cxx_std_20)
 
 add_executable(more src/more.cpp)
 set_target_properties(more PROPERTIES
@@ -32,7 +32,7 @@ foreach(cfg IN ITEMS Debug Release RelWithDebInfo MinSizeRel)
             "${CMAKE_SOURCE_DIR}/input"
             "${CMAKE_SOURCE_DIR}/bin/${cfg}/input"
     )
-    add_custom_command(TARGET scroller POST_BUILD
+    add_custom_command(TARGET scroll POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
             "${CMAKE_SOURCE_DIR}/input"
             "${CMAKE_SOURCE_DIR}/bin/${cfg}/input"

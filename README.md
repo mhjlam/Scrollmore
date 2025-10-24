@@ -1,6 +1,6 @@
 # Scrollmore
 
-This repository contains two standalone terminal pager programs: `more` and `scroller`.  
+This repository contains two standalone terminal pager programs: `more` and `scroll`.  
 They are grouped in this repository because they serve similar purposes, but each is independent and can be used separately.
 
 ## `more`
@@ -28,10 +28,11 @@ Line 3: Each line will be displayed in the pager."
 cat file.txt | more
 ```
 
-## `scroller`
+## `scroll`
 
-An interactive, scrollable pager inspired by programs like `less`, but with a modern interface.  
-Unlike `more`, which only pages forward and offers limited navigation, `scroller` allows full vertical scrolling, visual feedback via a scrollbar, and a modern interface for smoother navigation.
+An interactive, scrollable pager inspired by programs like `less`, but with a modern interface.
+
+Unlike `more`, which only pages forward and offers limited navigation, `scroll` allows full vertical scrolling, visual feedback via a scrollbar, and a modern interface for smoother navigation.
 
 **Features:**
 
@@ -44,25 +45,25 @@ Unlike `more`, which only pages forward and offers limited navigation, `scroller
 
 ```sh
 # View a file
-scroller file.txt
+scroll file.txt
 
 # View a string
-scroller "Line 1: This is some text to page through.
+scroll "Line 1: This is some text to page through.
 Line 2: You can add multiple lines.
 Line 3: Each line will be displayed in the pager."
 
 # Pipe input
-cat file.txt | scroller
+cat file.txt | scroll
 ```
 
 ## Building
 
-To be able to build `more` and `scroller`, the following libraries are required:
+To be able to build `more` and `scroll`, the following libraries are required:
 
 - [`ftxui`](https://github.com/ArthurSonzogni/ftxui)
 - [`cxxopts`](https://github.com/jarro2783/cxxopts)
 
-The easiest way to build `more` and `scroller` is using [`vcpkg`](https://github.com/microsoft/vcpkg) for dependencies and the included `CMakePresets.json` for convenient configuration in Visual Studio Code.
+The easiest way to build `more` and `scroll` is using [`vcpkg`](https://github.com/microsoft/vcpkg) for dependencies and the included `CMakePresets.json` for convenient configuration in Visual Studio Code.
 
 1. **Install dependencies via vcpkg:**
 
@@ -100,4 +101,4 @@ And if you prefer not to use `vcpkg` either, you can manually install **ftxui** 
 
 ## License
 
-This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
