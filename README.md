@@ -8,6 +8,8 @@ They are grouped in this repository because they serve similar purposes, but eac
 A modern implementation of the classic pager utility.  
 Displays text files, piped input, or command-line strings one page at a time.
 
+![more](media/more.png)
+
 **Features:**
 
 - Page through text with Enter (page down), Down Arrow (line down), and 'q' or Esc to quit.
@@ -33,6 +35,8 @@ cat file.txt | more
 An interactive, scrollable pager inspired by programs like `less`, but with a modern interface.
 
 Unlike `more`, which only pages forward and offers limited navigation, `scroll` allows full vertical scrolling, visual feedback via a scrollbar, and a modern interface for smoother navigation.
+
+![scroll](media/scroll.png)
 
 **Features:**
 

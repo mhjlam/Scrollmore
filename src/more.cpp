@@ -173,6 +173,20 @@ void more_pager(const std::vector<std::string>& lines, int lines_sub = 2) {
 }
 
 int main(int argc, char* argv[]) {
+#if defined(_WIN32)
+    // Set console to UTF-8 for proper Unicode support
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    
+    // Enable ANSI escape sequence processing
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    DWORD dwMode = 0;
+    if (GetConsoleMode(hOut, &dwMode)) {
+        dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+        SetConsoleMode(hOut, dwMode);
+    }
+#endif
+    
     try {
         // Parse command line options
         cxxopts::Options options("more", "A modern pager");
