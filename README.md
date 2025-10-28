@@ -1,5 +1,10 @@
 # Scrollmore
 
+**Terminal Pagers**
+
+> Maurits Lam  
+> 2025
+
 This repository contains two standalone terminal pager programs: `more` and `scroll`.  
 They are grouped in this repository because they serve similar purposes, but each is independent and can be used separately.
 
@@ -8,7 +13,9 @@ They are grouped in this repository because they serve similar purposes, but eac
 A modern implementation of the classic pager utility.  
 Displays text files, piped input, or command-line strings one page at a time.
 
-![more](media/more.png)
+<p align="center">
+   <img src="media/more.png" alt="more" height="400"/>
+</p>
 
 **Features:**
 
@@ -36,7 +43,9 @@ An interactive, scrollable pager inspired by programs like `less`, but with a mo
 
 Unlike `more`, which only pages forward and offers limited navigation, `scroll` allows full vertical scrolling, visual feedback via a scrollbar, and a modern interface for smoother navigation.
 
-![scroll](media/scroll.png)
+<p align="center">
+   <img src="media/scroll.png" alt="scroll" height="400"/>
+</p>
 
 **Features:**
 
